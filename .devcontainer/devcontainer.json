@@ -13,13 +13,14 @@
 	  ],
 
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
-	"postStartCommand": "npm install -g gatsby-cli" // Install Gatsby CLI
+	"postCreateCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
+	//"postStartCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8000]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
