@@ -13,8 +13,9 @@
 	  ],
 
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
-	"postCreateCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
-	//"postStartCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
+	"updateContentCommand": "npm install -g gatsby-cli",
+	"postCreateCommand": "npm install", // Install Gatsby CLI
+	"postStartCommand": "gatsby develop -H 0.0.0.0", // Run Gatsby Develop
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
