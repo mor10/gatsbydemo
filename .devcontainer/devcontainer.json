@@ -12,7 +12,6 @@
 		// Additional Extensions Here
 	  ],
 
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
 	"updateContentCommand": "npm install -g gatsby-cli",
 	"postCreateCommand": "npm install", // Install Gatsby CLI
 
