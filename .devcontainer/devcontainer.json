@@ -22,16 +22,16 @@
 		// Additional Extensions Here
 	],
 
-	// Configure tool-specific properties.
+	// Configure tool-specific properties. More info: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/automatically-opening-files-in-the-codespaces-for-a-repository#setting-files-to-be-opened-automatically
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
-				"pages/index.js"
+				"src/pages/index.js"
 			]
 		}
 	},
 
-	// Use for forwarding ports etc https://containers.dev/implementors/json_reference/#port-attributes
+	// Trigger actions on ports. More info: https://containers.dev/implementors/json_reference/#port-attributes
 	"portsAttributes": {
 		"8000": {
 			"label": "Application",
