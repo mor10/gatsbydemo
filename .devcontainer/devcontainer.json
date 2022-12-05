@@ -3,6 +3,9 @@
 {
 	"name": "Gatsby Base Test",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
+	"hostRequirements": {
+		"cpus": 4
+	},
 
 	"waitFor": "onCreateCommand",
 	"updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
