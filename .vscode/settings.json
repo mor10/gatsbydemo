@@ -1,5 +1,4 @@
 {
-    "terminal.integrated.defaultProfile.osx": "/bin/zsh",
-    "workbench.colorTheme": "FakeDonald's"
+    "terminal.integrated.defaultProfile.osx": "/bin/zsh"
 
 }
