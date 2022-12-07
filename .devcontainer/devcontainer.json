@@ -21,7 +21,8 @@
 		"GitHub.github-vscode-theme",
 		"esbenp.prettier-vscode",
 		"dbaeumer.vscode-eslint",
-		"stylelint.vscode-stylelint"
+		"stylelint.vscode-stylelint",
+		"samuelepignone.fakedonalds"
 		// Additional Extensions Here
 	],
 
