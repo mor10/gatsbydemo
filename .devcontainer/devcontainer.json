@@ -2,45 +2,45 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
 	"name": "Gatsby Base Test",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
-	"hostRequirements": {
-		"cpus": 4
-	},
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
+	// "hostRequirements": {
+	// 	"cpus": 4
+	// },
 
 	"waitFor": "onCreateCommand",
-	"updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
-	"postCreateCommand": "npm install",
-	"postAttachCommand": {
-		"server": "gatsby develop -H 0.0.0.0"
-	},
+	// "updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
+	// "postCreateCommand": "npm install",
+	// "postAttachCommand": {
+	// 	"server": "gatsby develop -H 0.0.0.0"
+	// },
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 		
-	"extensions": [
-		"GitHub.github-vscode-theme",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint",
-		"stylelint.vscode-stylelint"
-		// Additional Extensions Here
-	],
+	// "extensions": [
+	// 	"GitHub.github-vscode-theme",
+	// 	"esbenp.prettier-vscode",
+	// 	"dbaeumer.vscode-eslint",
+	// 	"stylelint.vscode-stylelint"
+	// 	// Additional Extensions Here
+	// ],
 
 	// Configure tool-specific properties. More info: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/automatically-opening-files-in-the-codespaces-for-a-repository#setting-files-to-be-opened-automatically
-	"customizations": {
-		"codespaces": {
-			"openFiles": [
-				"src/pages/index.js"
-			]
-		}
-	},
+	// "customizations": {
+	// 	"codespaces": {
+	// 		"openFiles": [
+	// 			"src/pages/index.js"
+	// 		]
+	// 	}
+	// },
 
 	// Trigger actions on ports. More info: https://containers.dev/implementors/json_reference/#port-attributes
-	"portsAttributes": {
-		"8000": {
-			"label": "Application",
-			"onAutoForward": "openPreview"
-		}
-	},
+	// "portsAttributes": {
+	// 	"8000": {
+	// 		"label": "Application",
+	// 		"onAutoForward": "openPreview"
+	// 	}
+	// },
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8000]
+	// "forwardPorts": [8000]
 }
