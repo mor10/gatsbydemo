@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "devcontainer.json walk-through",
+  "steps": [
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "Specify minimum host requirements for the Codespaces VM.\nMore info: https://containers.dev/implementors/json_reference/#min-host-reqs",
+      "line": 6
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "In this example, the number of CPUs is defined. You can also set `memory` size and `storage` size.",
+      "line": 7
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "Run a command as the container is set up. `updateContentCommand` is one of several lifecycle scripts available inside Codespaces.\n\nIn this example, the Gatsby CLI is installed in the background.\n\nMore info: https://containers.dev/implementors/json_reference/#lifecycle-scripts",
+      "line": 10
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "`postCreateCommand` is another lifecycle script triggered after `updateContentCommand`. Here `npm install` is triggered to install all dependencies.",
+      "line": 12
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "`postAttachCommand` is another lifecycle script. It runs each time a tool has attached to the container and is ideal for starting build tools. `postAttachCommand` runs in the active terminal.",
+      "line": 14
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "In this example, the `gatsby develop` process is triggered on a specified port.",
+      "line": 15
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "Array of extensions to be automatically installed and activated in the Codespace.",
+      "line": 21
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "Array of files to be automatically opened in the Codespaces editor.",
+      "line": 31
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "`portsAttributes` is used to trigger actions on ports.",
+      "line": 38
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "In this example, the project is opened in the native browser preview inside VS Code.",
+      "line": 41
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
+      "description": "`forwardPorts` is used to open ports in preparation for live preview and other features.",
+      "line": 46
+    }
+  ],
+  "ref": "codetour"
+}

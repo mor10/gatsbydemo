@@ -2,22 +2,46 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
 	"name": "Gatsby Demo Project",
+
+	"hostRequirements": {
+		"cpus": 4
+	},
+
+	"updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
+	
+	"postCreateCommand": "npm install",
+	
+	"postAttachCommand": {
+		"server": "gatsby develop -H 0.0.0.0"
+	},
+
+	// Configure tool-specific properties. More info: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/automatically-opening-files-in-the-codespaces-for-a-repository#setting-files-to-be-opened-automatically
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"vsls-contrib.codetour"
+				"vsls-contrib.codetour",
+				"GitHub.github-vscode-theme",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"stylelint.vscode-stylelint"
+				// Additional Extensions Here
+			]
+		},
+		"codespaces": {
+			"openFiles": [
+				"src/pages/index.js"
 			]
 		}
-	}
-		
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	},
+	
+	// Trigger actions on ports. More info: https://containers.dev/implementors/json_reference/#port-attributes
+	"portsAttributes": {
+		"8000": {
+			"label": "Application",
+			"onAutoForward": "openPreview"
+		}
+	},
+	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-	// Configure tool-specific properties.
-	// "customizations": {},
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"forwardPorts": [8000]
 }
