@@ -4,6 +4,11 @@
   "steps": [
     {
       "file": ".devcontainer/devcontainer.json",
+      "description": "Add a container image to control things like the Node.js version. This line is commented out to allow for faster load of the current example. For the Gatsby project to work, uncomment this line, rebuild the container, and Node.js v18 will be installed.",
+      "line": 5
+    },
+    {
+      "file": ".devcontainer/devcontainer.json",
       "description": "Specify minimum host requirements for the Codespaces VM.\nMore info: https://containers.dev/implementors/json_reference/#min-host-reqs",
       "line": 6
     },
