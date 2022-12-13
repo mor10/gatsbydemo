@@ -1,51 +1,28 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "Gatsby Base Test",
-	// "image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
-	// "hostRequirements": {
-	// 	"cpus": 4
-	// },
-
-	"waitFor": "onCreateCommand",
+	"name": "Gatsby Demo Project",
+	
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"vsls-contrib.codetour"
-				// 	"GitHub.github-vscode-theme",
-				// 	"esbenp.prettier-vscode",
-				// 	"dbaeumer.vscode-eslint",
-				// 	"stylelint.vscode-stylelint"
-				// 	// Additional Extensions Here
 			]
 		}
-	},
-	// "updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
-	// "postCreateCommand": "npm install",
-	// "postAttachCommand": {
-	// 	"server": "gatsby develop -H 0.0.0.0"
-	// },
-	
+	}
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
-
-	// Configure tool-specific properties. More info: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/automatically-opening-files-in-the-codespaces-for-a-repository#setting-files-to-be-opened-automatically
-	// "customizations": {
-	// 	"codespaces": {
-	// 		"openFiles": [
-	// 			"src/pages/index.js"
-	// 		]
-	// 	}
-	// },
-
-	// Trigger actions on ports. More info: https://containers.dev/implementors/json_reference/#port-attributes
-	// "portsAttributes": {
-	// 	"8000": {
-	// 		"label": "Application",
-	// 		"onAutoForward": "openPreview"
-	// 	}
-	// },
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [8000]
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
