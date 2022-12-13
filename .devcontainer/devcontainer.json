@@ -8,6 +8,18 @@
 	// },
 
 	"waitFor": "onCreateCommand",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vsls-contrib.codetour"
+				// 	"GitHub.github-vscode-theme",
+				// 	"esbenp.prettier-vscode",
+				// 	"dbaeumer.vscode-eslint",
+				// 	"stylelint.vscode-stylelint"
+				// 	// Additional Extensions Here
+			]
+		}
+	},
 	// "updateContentCommand": "npm install -g gatsby-cli", // Install Gatsby CLI
 	// "postCreateCommand": "npm install",
 	// "postAttachCommand": {
@@ -16,14 +28,7 @@
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-		
-	// "extensions": [
-	// 	"GitHub.github-vscode-theme",
-	// 	"esbenp.prettier-vscode",
-	// 	"dbaeumer.vscode-eslint",
-	// 	"stylelint.vscode-stylelint"
-	// 	// Additional Extensions Here
-	// ],
+
 
 	// Configure tool-specific properties. More info: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/automatically-opening-files-in-the-codespaces-for-a-repository#setting-files-to-be-opened-automatically
 	// "customizations": {
